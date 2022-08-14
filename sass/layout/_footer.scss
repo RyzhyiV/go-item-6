@@ -1,0 +1,105 @@
+.footer {
+    background-color: var(--title-background-color);
+}
+.footer-container {
+    display: flex;
+}
+.footer-logo-address-container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-right: 70px;
+}
+.contacts-list {
+    width: 230px;
+}
+.contacts-list-item:not(:last-child) {
+    margin-bottom: 9px;
+}
+.footer-addres-link {
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.71;
+    color: var(--title-color);
+}
+.footer-mail-link,
+.footer-tel-link {
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+}
+.footer-social-list-container {
+    padding-top: 72px;
+    margin-right: 92px;
+}
+.footer-social-list-description {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--title-color);
+    margin-bottom: 20px;
+}
+.footer-social-list {
+    display: flex;
+    justify-content: center;
+}
+.footer-social-list-item:not(:last-child) {
+    margin-right: 10px;
+}
+.footer-social-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+    }
+}
+.footer-social-list-icon {
+    width: 20px;
+    height: 20px;
+    fill: var(--title-color);
+}
+.footer-form-container {
+    padding-top: 72px;
+    width: 100%;
+}
+.subscription-form-description {
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--title-color);
+}
+.subscription-form-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.subscription-form-email {
+    width: 358px;
+    height: 50px;
+    margin-right: 12px;
+    padding-left: 16px;
+    color: var(--title-color);
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    &::placeholder {
+        color: rgba(255, 255, 255, 0.6);
+    }
+}
+.subscription-form-send-icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    fill: var(--title-color);
+}
